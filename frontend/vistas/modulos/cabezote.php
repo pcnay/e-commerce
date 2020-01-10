@@ -30,7 +30,7 @@
 
       </div>
 
-      <!-- R3GISTRO --> 
+      <!-- REGISTRO --> 
     <!-- Redes Sociales, definiendo los tamaños de las pantallas -->
     <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 registro">
       <ul>
@@ -98,6 +98,74 @@
       </div>
        
     </div> <!-- <div class="row" id="cabezote"> -->
+    
+    <!-- Categorias -->
+    <div class="col-xs-12 backColor" id="categorias">
+      <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
+      
+        <h4>
+          <a href="#" class="pixelCategorias">Pixel Categoria</a>
+        </h4>
+        <hr>
+        <ul> 
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+        </ul>        
+      
+      </div>
+
+      <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
+      
+        <h4>
+          <a href="#" class="pixelCategorias">Pixel Categoria</a>
+        </h4>
+        <hr>
+        <ul> 
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+        </ul>        
+      
+      </div>
+
+      <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
+      
+        <h4>
+          <a href="#" class="pixelCategorias">Pixel Categoria</a>
+        </h4>
+        <hr>
+        <ul> 
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+        </ul>        
+      
+      </div>
+
+      <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
+      
+        <h4>
+          <a href="#" class="pixelCategorias">Pixel Categoria</a>
+        </h4>
+        <hr>
+        <ul> 
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
+        </ul>        
+      
+      </div>
+
+    </div><!--  <div class="col-xs-12 backColor" id="categorias">  -->
 
   </div> <!-- <div class="container"> -->
 
