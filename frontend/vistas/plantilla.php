@@ -17,7 +17,15 @@ Maneja los iconos, que se utilizaran en elsistema
     <meta name="keyword" content= "comercio electronico ">
     <title>Tienda Virtual </title>
     <link rel="stylesheet" href="vistas/css/plugins/bootstrap.min.css">
+    <!-- Estos dos enlaces se bajaron de Google Font. -->
     <link rel="stylesheet" href="vistas/css/plugins/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Enlazando el archivo ".css" que se elaboro con el proyecto-->
+    <link rel="stylesheet" href="vistas/css/plantilla.css">
+    <link rel="stylesheet" href="vistas/css/cabezote.css">
+
     <script src="vistas/js/plugins/jquery.min.js"></script>
     <script src="vistas/js/plugins/bootstrap.min.js"></script>
   </head>

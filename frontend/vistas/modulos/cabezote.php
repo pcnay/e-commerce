@@ -7,6 +7,7 @@
         <ul>
           <li>
             <a href="http://facebook.com" target "_blank">
+            <!-- Se cambian los colores de los logos de las redes Sociales facebookColor (original) -->
             <i class="fa fa-facebook redSocial facebookBlanco" aria-hidden="true"></i>
           </li>
           <li>
@@ -15,6 +16,7 @@
           </li>
           <li>
             <a href="http://twitter.com" target "_blank">
+
             <i class="fa fa-twitter redSocial twitterBlanco" aria-hidden="true"></i>
           </li>
           <li>
@@ -62,28 +64,28 @@
 
       </div>
       <!-- BLOQUE CATEGORIAS Y BUSCADOR -->
-      <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 backColor" id="btnCategorias">
+
+      <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12" >
         <!-- Boton de categorias -->
-        <p>CATEGORIAS
-          <span class="pull-right">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 backColor" id="btnCategorias">      
+          <p>CATEGORIAS
+            <span class="pull-right">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </span>
+          </p> 
+        </div>
+
+        <!-- Buscador -->
+        <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-12" id="buscador">
+          <input type="search" name ="buscar" class="form-control" placeholder="Busca ..."> 
+          <span class = "input-group-btn">
+            <a href="#">
+              <button class = "btn btn-default backColor" type="submit">
+                <i class="fa fa-search"></i> 
+              </button>
+            </a>
           </span>
-        </p> 
-
-      </div>
-      <!-- Buscador -->
-      <div class="input-group col-lg-8 col-md-8 col-sm-8 col-xs-12" id="buscador">
-        <input type="search" name ="buscar" class="form-control" placeholder="Busca ..."> 
-        <span class = "input-group-btn">
-          <a href="#"
-             <button class = "btn btn-default backColor" type="submit">
-              <i class="fa fa-search"></i> 
-             </button>
-
-          </a>
-
-        </span>
-
+        </div>      
       </div>
 
       <!-- Carrito de Compras -->
@@ -100,7 +102,7 @@
     </div> <!-- <div class="row" id="cabezote"> -->
     
     <!-- Categorias -->
-    <div class="col-xs-12 backColor" id="categorias">
+    <div class="col-xs-12 backColor" id="btncategorias">
       <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
       
         <h4>
