@@ -113,7 +113,7 @@ ESCRITORIO GRANDE (LG revisamos en 1366px en adelante)
 	header #carrito{
 		padding-left:100px;
 	}
-
+ 
 }
 
 /*=============================================
@@ -125,6 +125,7 @@ ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
 	/*=============================================
 	HEADER
 	=============================================*/
+
 
 	header #logotipo img{
 		padding:25px 60px;
@@ -146,7 +147,7 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 	/*=============================================
 	HEADER
 	=============================================*/
-
+	
 	header #logotipo img{
 		padding:30px 0px;
 	}
@@ -155,7 +156,7 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 		padding-left:55px;
 	}
 
-	header #carrito p{
+ 	header #carrito p{
 		display:none;
 	}
 
@@ -166,12 +167,38 @@ MOVIL (XS revisamos en 320px)
 =============================================*/
 
 @media (max-width:767px){
+/*=============================================
+	HEADER
+	=============================================*/
+
+	header #logotipo img
+	{
+		padding:30px;
+		padding-bottom:10px;
+	}
+
+	header #categorias
+	{
+		margin-bottom:10px;
+	}
+	
+	header #buscador
+	{
+		margin-bottom:10px;
+	}
+	
+	header #carrito
+	{
+		margin:0px;
+	}
 
 	/*=============================================
 	TOP
-	=============================================*/
+	=============================================*/	
+	#top
 
-	#top ul{
+	ul
+	{
 		text-align: center;
 	}
 
