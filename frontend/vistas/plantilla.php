@@ -34,6 +34,7 @@ Maneja los iconos, que se utilizaran en elsistema
       // <!-- CABEZOTE-->  
       include "modulos/cabezote.php"
     ?> 
-  </body>
+  <script src= "vistas/js/cabezote.js"></script>  
+</body>
 
 </html>

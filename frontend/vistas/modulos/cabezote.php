@@ -102,7 +102,7 @@
     </div> <!-- <div class="row" id="cabezote"> -->
     
     <!-- Categorias -->
-    <div class="col-xs-12 backColor" id="btncategorias">
+    <div class="col-xs-12 backColor" id="categorias">
       <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
       
         <h4>
