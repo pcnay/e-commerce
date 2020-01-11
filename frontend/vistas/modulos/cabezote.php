@@ -2,31 +2,27 @@
 <div class="container-fluid barraSuperior" id="top">
   <div class="container">
     <div class="row">
+
     <!-- Redes Sociales, definiendo los tamaños de las pantallas -->
       <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12 social">
         <ul>
-          <li>
-            <a href="http://facebook.com" target "_blank">
-            <!-- Se cambian los colores de los logos de las redes Sociales facebookColor (original) -->
-            <i class="fa fa-facebook redSocial facebookBlanco" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="https://www.youtube.com" target "_blank">
-            <i class="fa fa-youtube redSocial youtubeBlanco" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="http://twitter.com" target "_blank">
+          <?php
+            $social = ControladorPlantilla::ctrEstiloPlantilla();
+            
+            $jsonRedesSociales = json_decode($social["redesSociales"],true);
+            //var_dump($jsonRedesSociales);
+            foreach ($jsonRedesSociales as $key => $value)
+            {
+              // var_dump ($value["estilo"]);
+              echo ' <li>
+                        <a href="'.$value["url"].'" target "_blank">
+                        <!-- Se cambian los colores de los logos de las redes Sociales facebookColor (original) -->
+                        <i class="fa '.$value["red"].' redSocial '.$value["estilo"].'" aria-hidden="true"></i>
+                     </li> ';
 
-            <i class="fa fa-twitter redSocial twitterBlanco" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="http://google.com" target "_blank">
-            <i class="fa fa-google-plus redSocial googleBlanco" aria-hidden="true"></i>
-          </li>
-          <li>
-            <a href="http://instagram.com" target "_blank">
-            <i class="fa fa-instagram redSocial instagramBlanco" aria-hidden="true"></i>
-          </li>
+            }
+
+          ?>
 
         </ul>
 

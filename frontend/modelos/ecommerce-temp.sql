@@ -26,28 +26,10 @@ DROP DATABASE IF EXISTS ecommerce;
 
 CREATE DATABASE IF NOT EXISTS ecommerce;
 USE ecommerce;
-/*
-Se borra desde terminal de myssql solamente
-DROP USER 'ventas';
-DROP USER 'ventas'@'localhost';
-FLUSH PROVILEGES;
-*/
-/*
-CREATE USER 'ventas'@'localhost' IDENTIFIED BY 'pcnay2003';
- GRANT ALL PRIVILEGES ON *.* TO 'ventas'@'localhost' IDENTIFIED BY 'pcnay2003'; 
-CREATE USER 'ventas'@'%' IDENTIFIED BY 'pcnay2003';
-GRANT ALL PRIVILEGES ON *.* TO 'ventas'@'%' WITH GRANT OPTION;
-FLUSH PROVILEGES;
-*/
 
 CREATE USER 'comercio'@'localhost' IDENTIFIED BY 'pcnay2003';
-GRANT ALL PRIVILEGES ON *.* TO 'comercio'@'localhost' IDENTIFIED BY 'pcnay2003';
-
-
-/*
 GRANT ALL on ecommerce.* to 'comercio'  IDENTIFIED BY 'pcnay2003';
-GRANT ALL on ecommerce.* to 'ventas'  IDENTIFIED BY 'pcnay2003';
-*/
+/* GRANT ALL PRIVILEGES ON *.* TO 'comercio'@'localhost' IDENTIFIED BY 'pcnay2003'; */
 
 -- --------------------------------------------------------
 
