@@ -53,14 +53,12 @@
   <div class="container">
     <div class="row" id="cabezote">
       <!-- LOGOTIPO-->
-
       <div class="col-lg-3 col-md-3 col-sm-2 col-xs-12" id="logotipo">
         <a href="#">
-           <img src="http://servidor.com/e-commerce/backend/<?php echo $social["logo"]; ?>" class= "img-responsive">
+           <img src="http://192.168.1.76/e-commerce/backend/vistas/img/plantilla/logo.png" class= "img-responsive">
         </a>
 
       </div>
-
       <!-- BLOQUE CATEGORIAS Y BUSCADOR -->
 
       <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12" >
