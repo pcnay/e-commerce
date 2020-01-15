@@ -101,69 +101,41 @@
     
     <!-- Categorias -->
     <div class="col-xs-12 backColor" id="categorias">
-      <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
-      
-        <h4>
-          <a href="#" class="pixelCategorias">Pixel Categoria</a>
-        </h4>
-        <hr>
-        <ul> 
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-        </ul>        
-      
-      </div>
+    <!-- Se extraera de forma dinámica las categorias desde la base de datos -->
+      <?php 
+        // Se obtiene las categorias que se utilizan en el menu principal del sistema de forma dinámica, desde la base de datos.
 
-      <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
-      
-        <h4>
-          <a href="#" class="pixelCategorias">Pixel Categoria</a>
-        </h4>
-        <hr>
-        <ul> 
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-        </ul>        
-      
-      </div>
+        $categorias = ControladorProductos::ctrMostrarCategorias();
+        // Lo que obtiene esta variable es un arreglo        
+        // var_dump($categorias);
 
-      <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
-      
-        <h4>
-          <a href="#" class="pixelCategorias">Pixel Categoria</a>
-        </h4>
-        <hr>
-        <ul> 
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-        </ul>        
-      
-      </div>
+        foreach ($categorias as $key => $value)
+        {
+          //var_dump($value["categoria"]);
+          //var_dump($value["id"]);
+          //exit;
 
-      <div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >
-      
-        <h4>
-          <a href="#" class="pixelCategorias">Pixel Categoria</a>
-        </h4>
-        <hr>
-        <ul> 
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-          <li><a href="#" class="pixelSubCategorias">SubCaterogias-X</a></li>
-        </ul>        
-      
-      </div>
+          // Estas clases son para Responsive de pantallas, varios tamaños.
+          echo '<div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >      
+                <h4>
+                  <a href="#" class="pixelCategorias">'.$value["categoria"].'</a>
+                </h4>
+                <hr>
+                <ul>'; 
+                  // Obtener las subcategorias dependiendo de la categoria, por esta razon se utiliza "id" desde la base de datos.
+
+                  $subcategorias = ControladorProductos::ctrMostrarSubCategorias($value["id"]);
+                  //var_dump($subcategorias);
+                  foreach ($subcategorias as $key => $value)
+                  {
+                    echo '<li><a href="#" class="pixelSubCategorias">'.$value["subcategoria"].'</a></li>';
+                  }
+          echo '</ul>
+             
+               </div> ';
+        }
+
+      ?> 
 
     </div><!--  <div class="col-xs-12 backColor" id="categorias">  -->
 
