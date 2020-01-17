@@ -5,6 +5,10 @@
 
   require_once "modelos/plantilla.modelo.php";
   require_once "modelos/productos.modelo.php";
+
+  
+  // Para establecer las rutas estaticas.
+  require_once "modelos/rutas.php";
   
   // Vincular la vista del Frontend con el "index.php" principal.
   /* Cambios permitidos :

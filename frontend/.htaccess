@@ -1,0 +1,25 @@
+# Se tiene que agregar estas lineas en el servidor remoto de linux
+#Como root:
+#a2enmod rewrite
+#Nano /etc/apache2/sites-available/000-default.conf
+#Añadir dentro de la sección “VirtualHost” correspondientes una sección “Directory”
+#<Directory “/var/www/html”>
+#  Require all granted
+# Options Indexes FollowSymLinks 
+  # MultiViews
+# AllowOverride All
+#</Directory>
+#/etc/init.d/apaceh2 restart
+
+
+# Impedir que se pueda ver el listado de contendiso de un directorio.
+Options All -Indexes
+
+#URL amigables
+# Permite modificar los que se escribe en el URL, desde los "<a>"
+# Se realiza una rescritura de la URL que se esta enviando, es decir oculta la ruta en la barra de direcciones.
+RewriteEngine On  
+# Entre corchete son los caracteres permitidos.
+#$1 = Es donde se guardara la URL amigable.
+# el archivo ".htaccess" reemplazara toda esta sentencia :"index.php?ruta=$1"
+RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?ruta=$1

@@ -118,7 +118,8 @@
           // Estas clases son para Responsive de pantallas, varios tamaños.
           echo '<div class = "col-lg-2 col-md-3 col-sm-4 col-xs-12" >      
                 <h4>
-                  <a href="#" class="pixelCategorias">'.$value["categoria"].'</a>
+                  <!-- Agregando las rutas amigables index.php?ruta= por solo "$value["ruta"]" -->
+                  <a href="'.$value["ruta"].'" class="pixelCategorias">'.$value["categoria"].'</a>
                 </h4>
                 <hr>
                 <ul>'; 
@@ -128,7 +129,8 @@
                   //var_dump($subcategorias);
                   foreach ($subcategorias as $key => $value)
                   {
-                    echo '<li><a href="#" class="pixelSubCategorias">'.$value["subcategoria"].'</a></li>';
+                    // <!-- Agregando las rutas amigables index.php?ruta= por solo "$value["ruta"]" -->
+                    echo '<li><a href="'.$value["ruta"].'" class="pixelSubCategorias">'.$value["subcategoria"].'</a></li>';
                   }
           echo '</ul>
              

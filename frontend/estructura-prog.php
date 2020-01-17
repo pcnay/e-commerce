@@ -23,6 +23,10 @@
             En esta parte es donde se hace el enlace con el Modelo desde el Controlador.
             ModeloProductos::mdlMostrarSubCategorias
             [productos.modelo.php]
+  
+  Para las URLs Amigables, se realiza cambios en el "Cabezote.php" seccion "<a>" de "Categorias"
+  
 */           
-*/
+
+
 ?>
